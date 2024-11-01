@@ -1,0 +1,61 @@
+# Image Processing with CIFAR-10 Dataset
+
+This project demonstrates various image processing techniques using the CIFAR-10 dataset. The code includes normalization, resizing, rotation, Gaussian blur, noise addition, and data augmentation. The goal is to showcase how to preprocess images for machine learning applications.
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Requirements](#requirements)
+- [Usage](#usage)
+- [Code Overview](#code-overview)
+- [License](#license)
+
+## Introduction
+
+The CIFAR-10 dataset contains 60,000 32x32 color images across 10 classes: airplane, automobile, bird, cat, deer, dog, frog, horse, ship, and truck. This project uses the dataset to demonstrate common image processing techniques that can enhance the quality of images for further analysis or machine learning tasks.
+
+## Requirements
+
+To run this project, you will need the following Python libraries:
+
+- `tensorflow`
+- `matplotlib`
+- `opencv-python`
+  
+You can install these libraries using pip:
+
+```bash
+pip install tensorflow matplotlib opencv-python
+
+## Usage
+1. Clone the repository or download the script.
+2. Ensure you have the required libraries installed.
+3. Run the script in a Python environment (e.g., Jupyter Notebook or any IDE).
+
+```bash
+python image_processing.py
+
+## Code Overview 
+The script performs the following steps:
+
+Load the CIFAR-10 Dataset: Downloads the dataset and splits it into training and test sets.
+Normalize Images: Scales pixel values to the range [0, 1].
+Display Images: A function to visualize images with their corresponding labels.
+Image Processing Functions:
+Resize: Resizes images to 64x64 pixels.
+Rotate: Rotates images by 15 degrees.
+Gaussian Blur: Applies Gaussian blur to the images.
+Add Noise: Adds Gaussian noise to the images.
+Data Augmentation: Uses Keras’s ImageDataGenerator to apply random transformations to the images.
+Visualization: Displays images at each processing step to showcase the effects of the transformations.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
+### Instructions for Saving
+
+1. Open a text editor or an IDE.
+2. Copy and paste the above content into the editor.
+3. Save the file with the name `README.md` in the same directory where your Python script is located.
+
+This README provides a comprehensive overview of the project, including its purpose, requirements, usage instructions, and a summary of the code's functionality. You can modify it further based on any additional details or specifics about your project.
